@@ -31,8 +31,7 @@ main {
 .slides {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    column-gap: 1000px;
-    transition: transform 1s;
+    transition: transform 700ms ease-out;
 }
 
 #slide-1 {
