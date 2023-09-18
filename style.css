@@ -8,7 +8,14 @@ body {
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 3rem;
+}
+
+body.no-transition * {
+    transition: none !important;
 }
 
 main {
@@ -73,4 +80,21 @@ button.slide-left, button.slide-right {
 .icon {
     width: 50px;
     height: 50px;
+}
+
+#slide-selection {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 1rem;
+}
+
+.slide-select {
+    width: 14px;
+    height: 14px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.slide-select.selected {
+    background-color: red;
 }
